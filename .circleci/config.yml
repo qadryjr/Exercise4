@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello world in the file"
-          command: echo "Hello, World!" > /tmp/dir/qadry/output.text
+          command: mkdir -P /tmp/dir/qadry && echo "Hello, World!" > /tmp/dir/qadry/output.text
       - persist_to_workspace:
           root: /tmp/dir
           paths:
