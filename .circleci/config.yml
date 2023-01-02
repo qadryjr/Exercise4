@@ -28,10 +28,10 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-         at: /tmp/workspace
+         at: ~/
       - run:
           name: "Show the file content"
-          command: "cat /tmp/dir/qadry/output.text"
+          command: "cat ~/output.text"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
