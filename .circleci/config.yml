@@ -16,11 +16,11 @@ jobs:
       - checkout
       - run:
           name: "Say hello world in the file"
-          command: mkdir -P /tmp/dir/qadry && echo "Hello, World!" > /tmp/dir/qadry/output.text
+          command: echo "Hello, World!" > ~/output.text
       - persist_to_workspace:
-          root: /tmp/dir
+          root: ~/
           paths:
-          - qadry/output.text
+          - output.text
          
   print_output_file:  
     docker:
