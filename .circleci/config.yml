@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello world in the file"
-          command: echo "Hello, World!" > ~/output.text
+          command: echo "Hello, World! from Qadry" > ~/output.text
       - persist_to_workspace:
           root: ~/
           paths:
